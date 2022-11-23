@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom" style="margin-top: -40px">
+
+      <button type="button" style="background:white; border:0; color:black; font-size: 14px; font-family: 'Montserrat', sans-serif;" class="btn btn-outline-secondary btn-lg px-4" onClick='location.href="new_patient"'>НОВЫЙ ПАЦИЕНТ</button>
+      <button type="button" style="background:white; border:0; color:black; font-size: 14px; font-family: 'Montserrat', sans-serif;" class="btn btn-outline-secondary btn-lg px-4" onClick='location.href="form"'>ЗАПОЛНИТЬ ДАННЫЕ</button>
+      <button type="button" style="background:white; border:0; color:black; font-size: 14px; font-family: 'Montserrat', sans-serif;" class="btn btn-outline-secondary btn-lg px-4" onClick='location.href="form"'>ПРОДОЛЖИТЬ ЗАПОЛНЕНИЕ</button>
+      <button type="button" style="background:#c16c73; border:0; color:white; font-size: 14px; font-family: 'Montserrat', sans-serif;;" class="btn btn-outline-secondary btn-lg px-4" onClick='location.href="/"'>ВЫЙТИ</button>
+
+    </header>
+
+<form action="" class="form-auto" style="width: 1000px">
+<h3 style="font-size: 42px; font-family: Montserrat">Очередь</h3>
+<div class="form-row">
+    <table style="text-align: center; width: 100%; font-family: Montserrat">
+   <tr>
+    <th>Пациент</th>
+    <th>Врач</th>
+    <th>Срочность</th>
+    <th>Примерное время ожидания</th>
+   </tr>
+        <tbody>
+        <tr><td>Иванов А.А.</td><td>Некрасов М.И.</td><td style="background: #c16c73">вне очереди</td><td>2 минуты</td></tr>
+</tbody>
+    </table>
+</div>
+</form>
+
+{% endblock %}

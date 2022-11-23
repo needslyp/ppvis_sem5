@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Приемное отделение</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body style="background: #99b4dc">
+
+<form action="" class="form-auto">
+<h3>Заполнение данных</h3>
+<div class="form-row">
+    <input type="text" id="name" required autocomplete="off"><label for="name"><b>{{ name }}</b></label>
+</div>
+<div class="form-row">
+    <input type="text" id="diagnos" required autocomplete="off"><label for="diagnos"><b>{{ diagnos }}</b></label>
+</div>
+<div class="form-row">
+    <input type="text" id="address" required autocomplete="off"><label for="address">Адрес, телефон</label>
+</div>
+    <div class="form-row">
+    <input type="text" id="sympthom" required autocomplete="off"><label for="sympthom">Симптомы</label>
+</div>
+    <button type="button" style="background: initial; border: black 1px; margin-bottom: 10px;  color:black; font-size: 14px; font-family: 'Montserrat', sans-serif;" class="btn btn-outline-secondary btn-lg px-4">СГЕНЕРИРОВАТЬ ТАЛОНЫ</button>
+    <p><input type="submit" value="Сохранить и вернуться" onclick='location.href="main_page"'></p>
+    <p><input type="submit" value="Закончить заполнение" onclick='location.href="main_page"'></p>
+</form>
+
+</body>
+</html>
